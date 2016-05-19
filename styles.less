@@ -1,43 +1,15 @@
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed and saved.
- *
- * Add your own CSS or Less to fully customize Atom.
- * If you are unfamiliar with Less, you can read more about it here:
- * http://lesscss.org
- */
-
-
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-// style the background color of the tree view
-.tree-view {
-  background-color: #ddd;
-
-  z-index: 99;
-}
-
-
-// style the background and foreground colors on the atom-text-editor-element itself
-atom-text-editor {
+atom-text-editor
+{
 
   background-color: #eee;
 }
 
-// To style other content in the text editor's shadow DOM, use the ::shadow expression
 atom-text-editor::shadow
 {
     .gutter, .line-numbers
     {
         background-color:#white;
-        -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.28);
-        -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.28);
-        box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.28);=
+        box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.28);
         z-index: 3;
     }
     .scroll-view
@@ -48,9 +20,4 @@ atom-text-editor::shadow
     {
         border-bottom: none; background-color: orange; position: absolute;
     }
-    .entity.other.attribute-name
-    {
-        //color: rgba(96, 141, 230, 1);
-    }
-
 }
